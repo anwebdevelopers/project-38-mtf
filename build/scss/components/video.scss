@@ -1,0 +1,78 @@
+.video {
+    position: relative;
+    top: rem(-120px);
+}
+.video__container {
+    @extend .container;
+
+}
+.video__box {
+    padding: rem(80px) 15px rem(160px) 15px;
+    background-color: #ea0a3a;
+    background-image: url(../img/bg-video.jpg);
+    background-position: center 0;
+    background-size: cover;
+}
+.video__title {
+    text-align: center;
+    h2 {
+        margin: 0;
+        font-size: rem(50px);
+        text-transform: uppercase;
+        font-weight: 900;
+        color: #fff;
+        line-height: 1.2;
+    }
+}
+.video__link {
+    margin: rem(80px) 0 0 0;
+    text-align: center;
+    a {
+        display: inline-block;
+        vertical-align: top;
+    	width: 142px;
+    	height: 142px;
+        background-image: url(../img/sprites.png);
+        background-position: 0 -585.0000152587891px ;
+        transition: all .5s ease;
+        &:hover, &:active, &:focus {
+            opacity: .6;
+        }
+    }
+}
+.video__time {
+    margin: rem(20px) 0 0 0;
+    text-align: center;
+    font-size: rem(18px);
+    color: #fff;
+}
+
+@media only screen and (max-width : 1200px) {
+
+}
+
+@media only screen and (max-width : 992px) {
+
+}
+
+@media only screen and (max-width : 768px) {
+    .video__box {
+        margin: 0 -15px;
+    }
+
+}
+@media only screen and (max-width : 640px) {
+
+}
+
+@media only screen and (max-width : 480px) {
+    .video__title {
+        h2 {
+            font-size: rem(40px);
+        }
+    }
+}
+
+@media only screen and (max-width : 320px) {
+
+}

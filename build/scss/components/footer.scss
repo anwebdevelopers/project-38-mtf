@@ -1,0 +1,204 @@
+.footer {
+    padding: rem(70px) 0 rem(60px) 0;
+    background-color: #0e0b30;
+}
+.footer__container {
+    @extend .container;
+    @extend .clearfix;
+}
+.footer__title {
+    float: left;
+    width: rem(190px);
+    color: #fff;
+    h3 {
+        margin: 0;
+        font-size: rem(25px);
+        line-height: 1.2;
+        text-transform: uppercase;
+    }
+    a {
+        text-decoration: none;
+        color: #fff;
+    }
+}
+.footer__menu {
+    float: left;
+    width: rem(430px);
+    margin: 0 0 0 rem(40px);
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        font-size: 0;
+        display: flex;
+        flex-wrap: wrap;
+        li {
+            display: inline-block;
+            vertical-align: top;
+            width: 50%;
+            margin: 0 0 rem(10px) 0;
+            padding: 0 rem(20px) 0 0;
+            a {
+                font-size: rem(15px);
+                text-decoration: none;
+                color: #fff;
+                transition: all .5s ease;
+                &:hover, &:active, &:focus {
+                    color: $red;
+                }
+            }
+        }
+    }
+}
+
+.footer__contacts {
+    float: right;
+    width: rem(490px);
+    margin: 0 0 0 rem(20px);
+    text-align: right;
+}
+.footer__contacts-item {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 0 rem(20px) 0;
+    text-align: right;
+    &:nth-child(even) {
+        margin:  0 0 rem(20px) rem(30px);
+    }
+}
+.footer__contacts-link {
+    display: block;
+    position: relative;
+    padding: 0 0 0 rem(40px);
+    color: #fff;
+    text-decoration: none;
+    i {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: rem(22px);
+        transition: all .5s ease;
+    }
+    span {
+        font-weight: 500;
+        position: relative;
+        &:after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            right: 50%;
+            bottom: 0;
+            height: 1px;
+            background-color: $red;
+            transition: all .5s ease;
+        }
+    }
+    &:hover, &:active, &:focus {
+		i {
+            color: $red;
+        }
+        span {
+            &:after {
+                left: 0;
+                right: 0;
+            }
+        }
+	}
+}
+.footer__contacts-button {
+    color: #00deff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all .5s ease;
+    &:hover, &:active, &:focus {
+		color: $red;
+    }
+}
+
+.footer__social {
+    clear: right;
+    float: right;
+    margin: rem(60px) 0 0 rem(25px);
+    a {
+        text-decoration: none;
+        color: #fff;
+        transition: all .5s ease;
+        font-size: rem(18px);
+        &:hover, &:active, &:focus {
+            color: $red;
+        }
+    }
+}
+
+@media only screen and (max-width : 1200px) {
+    .footer__contacts {
+        width: rem(340px);
+        margin: 0 0 0 rem(20px);
+    }
+    .footer__contacts-item {
+        &:nth-child(even) {
+            margin: 0 0 rem(20px) 0;
+        }
+    }
+    .footer__social {
+        margin: rem(10px) 0 0 rem(25px);
+    }
+}
+
+@media only screen and (max-width : 992px) {
+    .footer__menu {
+        width: rem(360px);
+        margin: 0 0 0 rem(20px);
+    }
+    .footer__contacts {
+        width: rem(250px);
+    }
+}
+
+@media only screen and (max-width : 768px) {
+    .footer__title {
+        float: none;
+        width: auto;
+        text-align: center;
+    }
+    .footer__menu {
+        margin: rem(40px) 0 0 0;
+    }
+    .footer__contacts {
+        margin: rem(40px) 0 0 rem(20px);
+    }
+}
+@media only screen and (max-width : 640px) {
+    .footer__menu {
+        float: none;
+        width: auto;
+        text-align: center;
+        ul {
+            display: block;
+            li {
+                display: block;
+                width: auto;
+            }
+        }
+    }
+    .footer__contacts {
+        float: none;
+        margin: rem(40px) auto 0 auto;
+        text-align: center;
+    }
+    .footer__social {
+        float: none;
+        width: auto;
+        text-align: center;
+        margin: rem(10px) 0 0 0;
+    }
+}
+
+@media only screen and (max-width : 480px) {
+
+}
+
+@media only screen and (max-width : 320px) {
+
+}

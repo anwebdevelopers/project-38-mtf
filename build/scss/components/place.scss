@@ -1,0 +1,95 @@
+.place {
+    padding: 0 0 rem(390px) 0;
+    background-color: #001c60;
+    background-image: url(../img/bg-place.jpg);
+    background-repeat: repeat;
+    background-position: center bottom;
+    background-size: cover;
+}
+.place__container {
+    @extend .container;
+}
+.place__request {
+    position: relative;
+    top: rem(-90px);
+    padding: rem(70px) 15px rem(60px) 15px;
+    background-color: $blue;
+    background-image: url(../img/bg-participants.png);
+    background-position: center 0;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    text-align: center;
+}
+.place__request-title {
+    color: #fff;
+    h3 {
+        margin: 0;
+        font-size: rem(38px);
+        line-height: 1.2;
+        font-weight: 900;
+        text-transform: uppercase;
+    }
+}
+.place__request-text {
+    margin: rem(20px) 0 0 0;
+    font-size: rem(25px);
+    color: #fff;
+}
+.place__request-button {
+    margin: rem(50px) 0 0 0;
+}
+.place__title {
+    color: #fff;
+}
+.place__box {
+    margin: rem(70px) 0 0 0;
+}
+.place__name {
+    color: #fff;
+    h3 {
+        margin: 0;
+        font-size: rem(25px);
+        text-transform: uppercase;
+        font-weight: 900;
+    }
+}
+.place__adress {
+    margin: rem(25px) 0 0 0;
+    font-size: rem(25px);
+    font-weight: 500;
+    color: #fff;
+}
+.place__metro {
+    margin: rem(5px) 0 0 0;
+    font-size: rem(20px);
+    color: #fff;
+}
+.map {
+    height: rem(360px);
+}
+@media only screen and (max-width : 1200px) {
+
+}
+
+@media only screen and (max-width : 992px) {
+
+}
+
+@media only screen and (max-width : 768px) {
+
+}
+@media only screen and (max-width : 640px) {
+
+}
+
+@media only screen and (max-width : 480px) {
+    .place__request-title {
+        h3 {
+            font-size: rem(30px);
+        }
+    }
+}
+
+@media only screen and (max-width : 320px) {
+
+}

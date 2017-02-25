@@ -1,0 +1,104 @@
+.icion-header-about3, .icion-header-about4, .icon-participants1, .icon-participants2, .icon-participants3, .icon-participants4, .icon-participants5, .icon-participants6, .icon-participants7, .icon-participants8, .icon-participants9, .icon-participants10, .icon-participants11, .icon-participants12, .icon-play, .icion-header-about1, .icion-header-about2{
+	background: url(sprites.png) no-repeat;
+}
+.icion-header-about1{
+	background-position: 0 0;
+	width: 39px;
+	height: 38px;
+}
+
+.icion-header-about2{
+	background-position: 0 -51px ;
+	width: 37px;
+	height: 35px;
+}
+
+.icion-header-about3{
+	background-position: 0 -99.00001525878906px ;
+	width: 39px;
+	height: 35px;
+}
+
+.icion-header-about4{
+	background-position: 0 -148.00001525878906px ;
+	width: 21px;
+	height: 38px;
+}
+
+.icon-participants1{
+	background-position: 0 -196.00001525878906px ;
+	width: 24px;
+	height: 25px;
+}
+
+.icon-participants2{
+	background-position: 0 -229.00001525878906px ;
+	width: 29px;
+	height: 29px;
+}
+
+.icon-participants3{
+	background-position: 0 -266.00001525878906px ;
+	width: 25px;
+	height: 27px;
+}
+
+.icon-participants4{
+	background-position: 0 -304.00001525878906px ;
+	width: 28px;
+	height: 23px;
+}
+
+.icon-participants5{
+	background-position: 0 -337.00001525878906px ;
+	width: 21px;
+	height: 27px;
+}
+
+.icon-participants6{
+	background-position: 0 -370.00001525878906px ;
+	width: 26px;
+	height: 26px;
+}
+
+.icon-participants7{
+	background-position: 0 -401.00001525878906px ;
+	width: 27px;
+	height: 18px;
+}
+
+.icon-participants8{
+	background-position: 0 -426.00001525878906px ;
+	width: 26px;
+	height: 27px;
+}
+
+.icon-participants9{
+	background-position: 0 -458.00001525878906px ;
+	width: 26px;
+	height: 23px;
+}
+
+.icon-participants10{
+	background-position: 0 -488.00001525878906px ;
+	width: 26px;
+	height: 28px;
+}
+
+.icon-participants11{
+	background-position: 0 -521.0000152587891px ;
+	width: 24px;
+	height: 24px;
+}
+
+.icon-participants12{
+	background-position: 0 -555.0000152587891px ;
+	width: 29px;
+	height: 20px;
+}
+
+.icon-play{
+	background-position: 0 -585.0000152587891px ;
+	width: 142px;
+	height: 142px;
+}

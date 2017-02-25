@@ -1,0 +1,112 @@
+.contest {
+    padding: rem(100px) 0;
+    background-color: $dark;
+    background-image: url(../img/bg-contest.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.contest__container {
+    @extend .container;
+}
+.contest__title {
+    color: #fff;
+}
+.contest__box {
+    @extend .clearfix;
+    margin: rem(60px) 0 0 0;
+}
+.contest__content {
+    float: left;
+    width: 55%;
+
+    &>:first-child() {
+        margin-top: 0;
+    }
+    &>:last-child() {
+        margin-bottom: 0;
+    }
+}
+.contest__content-text {
+    margin: rem(40px) 0 0 0;
+    color: #fff;
+    font-size: rem(20px);
+    line-height: 1.6;
+    p {
+        margin: 0;
+    }
+}
+.contest__content-title {
+    margin: rem(40px) 0 0 0;
+    color: #fff;
+    h3 {
+        margin: 0;
+        font-size: rem(20px);
+        line-height: 1.6;
+        font-weight: 500;
+    }
+}
+.contest__content-list {
+    margin: rem(20px) 0;
+    font-size: rem(20px);
+    line-height: 1.6;
+    color: #fff;
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li {
+            position: relative;
+            padding: 0 0 0 rem(20px);
+            &:before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: rem(15px);
+                width: 3px;
+                height: 3px;
+                border-radius: 3px;
+                background-color: #fff;
+            }
+        }
+    }
+}
+.contest__button {
+    margin: rem(80px) 0 0 0;
+}
+
+@media only screen and (max-width : 1200px) {
+
+}
+
+@media only screen and (max-width : 992px) {
+
+}
+
+@media only screen and (max-width : 768px) {
+    .contest__content {
+        width: 70%;
+    }
+}
+@media only screen and (max-width : 640px) {
+    .contest {
+        background-position: 60% bottom;
+        background-attachment: scroll;
+    }
+    .contest__content {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width : 480px) {
+
+    .contest__content {
+        float: none;
+        width: auto;
+    }
+}
+
+@media only screen and (max-width : 320px) {
+
+}

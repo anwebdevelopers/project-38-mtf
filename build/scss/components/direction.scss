@@ -1,0 +1,212 @@
+.direction {
+    padding: 0 0 rem(60px) 0;
+    margin: rem(75px) 0 0 0;
+    background-color: $dark;
+}
+.direction__container {
+    @extend .container;
+}
+.direction__title {
+    position: relative;
+    top: rem(-75px);
+}
+.direction__box {
+    margin: rem(40px) 0 0 0;
+    font-size: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.direction__item {
+    display: inline-block;
+    vertical-align: top;
+    width: 23%;
+    margin: 0 5.15% rem(50px) 5.15%;
+    &:hover, &:active {
+        .direction__item-img {
+            img {
+                transform: scale(.9);
+            }
+            &:after {
+                transform: scale(1);
+            }
+        }
+    }
+}
+.direction__item-img {
+    position: relative;
+    img {
+        position: relative;
+        z-index: 1;
+        display: block;
+        width: 100%;
+        height: auto;
+        border-radius: 50%;
+        transform: scale(1);
+        transition: all .5s ease;
+    }
+    &:after {
+        content: '';
+        position: absolute;
+        z-index: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        border-radius: 50%;
+        border: 3px solid $red;
+        transform: scale(0.9);
+        transition: all .5s ease;
+    }
+}
+.direction__item-name {
+    margin: rem(40px) 0 0 0;
+    font-size: rem(20px);
+    line-height: 1.2;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #fff;
+}
+.direction__item-position {
+    margin: rem(10px) 0 0 0;
+    font-size: rem(16px);
+    line-height: 1.2;
+    color: #fff;
+}
+.direction__item-linkbox {
+    margin: rem(20px) 0 0 0;
+}
+.direction__item-link {
+    font-size: rem(16px);
+    line-height: 1.2;
+
+    a {
+        text-decoration: none;
+        color: #fff;
+        transition: all .5s ease;
+        &:hover, &:active, &:focus {
+            color: $red;
+        }
+    }
+}
+.direction__questions {
+    margin: rem(60px) 0 0 0;
+}
+.direction__questions-title {
+    font-size: rem(20px);
+    line-height: 1.2;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #fff;
+    text-align: center;
+}
+.direction__questions-button {
+    margin: rem(40px) 0 0 0;
+    text-align: center;
+}
+.direction__events {
+    margin: rem(100px) 0 0 0;
+}
+.direction__events-title {
+    font-size: rem(20px);
+    line-height: 1.2;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #fff;
+    text-align: center;
+}
+.direction__events-box {
+    margin: rem(40px) 0 0 0;
+    font-size: 0;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.direction__events-item {
+    display: inline-block;
+    vertical-align: top;
+    width: 16%;
+    min-height: 75px;
+    line-height: 75px;
+    margin: 0 2% rem(40px) 2%;
+    img {
+        display: inline-block;
+        vertical-align: middle;
+        max-width: 100%;
+        width: auto;
+        height: auto;
+        transition: all .5s ease;
+    }
+    &:hover, &:active {
+        img {
+            transform: scale(.9);
+            filter: brightness(1.3);
+        }
+    }
+}
+@media only screen and (max-width : 1200px) {
+    .direction__item {
+        width: 28.3%;
+        margin: 0 2.5% rem(50px) 2.5%;
+    }
+}
+
+@media only screen and (max-width : 992px) {
+    .direction__title {
+        top: rem(-65px);
+    }
+    .direction__item {
+        width: 30.3%;
+        margin: 0 1.5% rem(50px) 1.5%;
+    }
+    .direction__events-item {
+        width: 18%;
+        margin: 0 1% rem(40px) 1%;
+    }
+}
+
+@media only screen and (max-width : 768px) {
+    .direction__title {
+        top: rem(-60px);
+    }
+    .direction__events-item {
+        width: 21%;
+        margin: 0 2% rem(40px) 2%;
+    }
+}
+@media only screen and (max-width : 640px) {
+    .direction__title {
+        top: rem(-40px);
+    }
+    .direction__item {
+        width: 44%;
+        margin: 0 3% rem(50px) 3%;
+    }
+    .direction__events-item {
+        width: 29.3%;
+        margin: 0 2% rem(40px) 2%;
+    }
+}
+
+@media only screen and (max-width : 480px) {
+    .direction__title {
+        top: rem(-30px);
+    }
+    .direction__item {
+        width: 60%;
+        margin: 0 20% rem(50px) 20%;
+    }
+    .direction__events-item {
+        width: 42%;
+        margin: 0 4% rem(40px) 4%;
+    }
+}
+
+@media only screen and (max-width : 360px) {
+    .direction__item {
+        width: 80%;
+        margin: 0 10% rem(50px) 10%;
+    }
+}

@@ -1,0 +1,191 @@
+.price {
+    padding: rem(100px) 0;
+}
+.price__container {
+    @extend .container;
+}
+.price__box {
+    margin: rem(60px) 0 0 0;
+}
+.price__table {
+    overflow-x: auto;
+    table {
+        border-spacing: 0;
+        border-collapse: collapse;
+        font-size: rem(20px);
+        line-height: 1.2;
+    }
+    tr {
+        border-bottom: 2px dotted #dadada;
+    }
+    th {
+        padding: rem(20px);
+        text-transform: uppercase;
+        font-weight: 900;
+    }
+    td {
+        padding: rem(20px);
+        text-align: center;
+        font-weight: 900;
+    }
+    td:first-child() {
+        text-align: left;
+        font-weight: 400;
+    }
+    tr:first-child() {
+        th:nth-child(1) {
+            text-align: left;
+            border-bottom: rem(6px) solid $fc;
+        }
+        th:nth-child(2) {
+            border-bottom: rem(6px) solid $blue;
+        }
+        th:nth-child(3) {
+            border-bottom: rem(6px) solid $red;
+        }
+        th:nth-child(4) {
+            border-bottom: rem(6px) solid $dark;
+        }
+    }
+    th:nth-child(2),
+    td:nth-child(2) {
+        color: $blue;
+    }
+    th:nth-child(3),
+    td:nth-child(3) {
+        color: $red;
+    }
+    th:nth-child(4),
+    td:nth-child(4) {
+        color: $dark;
+    }
+    tr:nth-last-child(3) {
+        border-bottom: none;
+        td:nth-child(2) {
+            border-top: rem(6px) solid $blue;
+        }
+        td:nth-child(3) {
+            border-top: rem(6px) solid $red;
+        }
+        td:nth-child(4) {
+            border-top: rem(6px) solid $dark;
+        }
+        td {
+            color: $fc;
+            font-size: rem(36px);
+            white-space: nowrap;
+        }
+    }
+    tr:nth-last-child(2) {
+        border-bottom: none;
+        td {
+            padding: 0;
+            color: $fc;
+            font-weight: 400;
+        }
+    }
+    tr:last-child() {
+        border-bottom: none;
+        .button {
+            white-space: nowrap;
+        }
+    }
+}
+
+@media only screen and (max-width : 1200px) {
+    .price__table {
+        // td, th {
+        //     padding: rem(30px);
+        // }
+        tr:last-child() {
+            .button {
+                a {
+                    padding: rem(20px) rem(30px);
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width : 992px) {
+    .price__table {
+        table {
+            font-size: rem(18px);
+        }
+        // td, th {
+        //     padding: rem(20px);
+        // }
+        tr:nth-last-child(3) {
+            td {
+                font-size: rem(30px);
+            }
+        }
+        tr:last-child() {
+            .button {
+                white-space: nowrap;
+                a {
+                    padding: rem(15px) rem(25px);
+                    font-size: rem(15px);
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width : 768px) {
+    .price__table {
+        table {
+            font-size: rem(16px);
+        }
+        td, th {
+            padding: rem(20px) rem(10px);
+        }
+        tr:nth-last-child(3) {
+            td {
+                font-size: rem(26px);
+            }
+        }
+        tr:last-child() {
+            .button {
+                white-space: nowrap;
+                a {
+                    padding: rem(10px) rem(20px);
+                    font-size: rem(15px);
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width : 640px) {
+    .price__table {
+        table {
+            font-size: rem(14px);
+        }
+        td, th {
+            padding: rem(15px) rem(5px);
+        }
+        tr:nth-last-child(3) {
+            td {
+                font-size: rem(22px);
+            }
+        }
+        tr:last-child() {
+
+            .button {
+                white-space: nowrap;
+                a {
+                    padding: rem(10px) rem(20px);
+                    font-size: rem(14px);
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width : 480px) {
+
+}
+
+@media only screen and (max-width : 320px) {
+
+}

@@ -1,0 +1,149 @@
+@import "bourbon";
+@import "components/vars.scss";
+@import "components/normalize.scss";
+@import "components/fonts.scss";
+@import "components/fontello.scss";
+
+
+
+*::-webkit-input-placeholder {
+	color: $fc;
+	opacity: 1;
+}
+*:-moz-placeholder {
+	color: $fc;
+	opacity: 1;
+}
+*::-moz-placeholder {
+	color: $fc;
+	opacity: 1;
+}
+
+*:-ms-input-placeholder {
+	color: $fc;
+	opacity: 1;
+}
+*:focus::-webkit-input-placeholder {color: transparent}
+*:focus::-moz-placeholder          {color: transparent}
+*:focus:-moz-placeholder           {color: transparent}
+*:focus:-ms-input-placeholder      {color: transparent}
+
+*,
+*:before,
+*:after{
+	box-sizing: border-box;
+}
+html {
+	font-size: 16px;
+}
+body {
+	margin: 0;
+	padding: 0;
+	font-size: rem(16px);
+	min-width: 320px;
+	position: relative;
+	line-height: 1.4;
+	font-family: 'Gotham Pro', sans-serif;
+	color: $fc;
+	background-color: #fff;
+}
+.container {
+	max-width: 1200px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.hidden {
+	display: none;
+}
+.button {
+	button, a {
+		text-decoration: none;
+		outline: none;
+		display: inline-block;
+		vertical-align: top;
+		padding: rem(25px) rem(35px);
+		background-color: $red;
+		color: #fff;
+		border: 2px solid $red;
+		font-size: rem(18px);
+		font-weight: 500;
+		font-family: 'Gotham Pro';
+		border-radius: rem(70px);
+		transition: all .5s ease;
+		cursor: default;
+		&:hover, &:active, &:focus {
+			background-color: transparent;
+			color: $red;
+		}
+	}
+}
+.button_white {
+	a, button {
+		background-color: transparent;
+		border-color: #fff;
+		&:hover, &:active, &:focus {
+			color: #fff;
+			background-color: $red;
+			border-color: $red;
+		}
+	}
+}
+.button_hover-blue {
+	a, button {
+		&:hover, &:active, &:focus {
+			background-color: $blue;
+			border-color: $blue;
+		}
+	}
+}
+.title {
+	color: $dark;
+	h2 {
+		margin: 0;
+		font-size: rem(88px);
+		text-transform: uppercase;
+		font-weight: 900;
+		line-height: 1;
+	}
+}
+a {
+	&:focus {
+		outline: transparentize($red, .5) !important;
+	}
+}
+
+
+//Custom Styles Here
+@import "components/header.scss";
+@import "components/registration.scss";
+@import "components/about.scss";
+@import "components/video.scss";
+@import "components/themes.scss";
+@import "components/speakers.scss";
+@import "build/scss/components/magnific-popup.scss";
+@import "components/participants.scss";
+@import "components/contest.scss";
+@import "components/price.scss";
+@import "components/exhibition.scss";
+@import "components/place.scss";
+@import "components/parthners.scss";
+@import "components/direction.scss";
+@import "components/footer.scss";
+@import "components/popup.scss";
+
+//ALWAYS END
+@import "components/media.scss";
+
+//Load Libs SASS
+@import "html/libs/Attractive-jQuery-Circular-Countdown-Timer-Plugin-TimeCircles/inc/TimeCircles";
+//@import "html/libs/animate/animate.sass";
+@import "html/libs/owl.carousel/dist/assets/owl.carousel.min";
+//@import "html/libs/superfish/dist/css/superfish";
+//@import "html/libs/font-awesome/scss/font-awesome.scss";
+//@import "html/libs/jQuery.mmenu/dist/css/jquery.mmenu.all";
+@import "html/libs/magnific-popup/dist/magnific-popup";

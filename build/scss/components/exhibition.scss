@@ -1,0 +1,124 @@
+.exhibition {
+    padding: 0 0 rem(170px) 0;
+    margin: rem(75px) 0 0 0;
+    background-color: $red;
+    background-image: url(../img/bg-exhibition.png);
+    background-position: center bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.exhibition__container {
+    @extend .container;
+}
+.exhibition__title {
+    position: relative;
+    top: rem(-75px);
+    color: #fff;
+    span {
+        display: block;
+        color: $red;
+    }
+}
+.exhibition__box {
+    @extend .clearfix;
+    margin: rem(40px) 0 0 0;
+}
+.exhibition__content {
+    float: left;
+    width: 55%;
+
+    &>:first-child() {
+        margin-top: 0;
+    }
+    &>:last-child() {
+        margin-bottom: 0;
+    }
+
+
+
+}
+.exhibition__content-title {
+    margin: rem(40px) 0 rem(20px) 0;
+    color: #fff;
+    h3 {
+        margin: 0;
+        font-weight: 900;
+        font-size: rem(38px);
+        line-height: 1;
+        text-transform: uppercase;
+    }
+}
+.exhibition__content-list {
+    margin: rem(20px) 0;
+    color: #fff;
+    font-size: rem(20px);
+    line-height: 1.6;
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li {
+            margin: rem(10px) 0;
+        }
+    }
+}
+.exhibition__content-price {
+    margin: rem(20px) 0;
+    font-weight: 900;
+    font-size: rem(33px);
+    line-height: 1.6;
+    color: #fff;
+}
+.exhibition__button {
+    margin: rem(80px) 0 0 0;
+}
+
+@media only screen and (max-width : 1200px) {
+
+}
+
+@media only screen and (max-width : 992px) {
+    .exhibition__title {
+        top: rem(-65px);
+    }
+}
+
+@media only screen and (max-width : 768px) {
+    .exhibition__title {
+        top: rem(-60px);
+    }
+    .exhibition__content {
+        width: 70%;
+    }
+}
+@media only screen and (max-width : 640px) {
+    .exhibition {
+        background-image: none;
+    }
+    .exhibition__title {
+        top: rem(-40px);
+    }
+    .exhibition__content {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width : 480px) {
+    .exhibition__title {
+        top: rem(-30px);
+    }
+    .exhibition__content {
+        float: none;
+        width: auto;
+    }
+    .exhibition__content-title {
+        h3 {
+            font-size: rem(30px);
+        }
+    }
+}
+
+@media only screen and (max-width : 320px) {
+
+}

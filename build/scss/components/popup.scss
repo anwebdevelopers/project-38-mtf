@@ -1,0 +1,62 @@
+.popup {
+    position: relative;
+    max-width: 420px;
+    width: 100%;
+    padding: rem(70px) rem(30px);
+    margin: 0 auto;
+    background-color: $dark;
+}
+.popup__title {
+
+    margin: 0 auto;
+    font-size: rem(25px);
+    color: #fff;
+    line-height: 1.2;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+}
+.popup__form {
+    margin: rem(40px) auto 0 auto;
+}
+.popup__form-item {
+    display: block;
+    margin: rem(35px) 0 0 0;
+    &:first-child() {
+        margin: 0;
+    }
+    input {
+        display: block;
+        width: 100%;
+        height: rem(60px);
+        padding: 0 rem(30px);
+        line-height: rem(56px);
+        color: #fff;
+        font-size: rem(16px);
+        background-color: transparent;
+        border: none;
+        border: 2px solid $blue;
+        border-radius: 60px;
+        outline: 0;
+        box-shadow: none;
+        font-family: Verdana, sans-serif;
+        transition: all .5s ease;
+		&:hover, &:active, &:focus {
+            border-color: $red;
+		}
+        &::-webkit-input-placeholder {color: #fff}
+        &::-moz-placeholder          {color: #fff}
+        &:-moz-placeholder           {color: #fff}
+        &:-ms-input-placeholder      {color: #fff}
+        &:focus::-webkit-input-placeholder {color: transparent}
+        &:focus::-moz-placeholder          {color: transparent}
+        &:focus:-moz-placeholder           {color: transparent}
+        &:focus:-ms-input-placeholder      {color: transparent}
+    }
+}
+.popup__form-submit {
+    margin: rem(80px) 0 0 0;
+    button {
+        width: 100%;
+    }
+}
